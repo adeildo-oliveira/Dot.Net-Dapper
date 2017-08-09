@@ -1,0 +1,57 @@
+﻿@model ProjetoArquivoLinks.Aplication.ViewModels.LinkViewModel
+
+<div class="modal-content">
+    <header class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Novo Link</h4>
+    </header>
+
+
+    @using (Ajax.BeginForm("CadastrarLink", "Link", new AjaxOptions
+    {
+        HttpMethod = "Post", InsertionMode = InsertionMode.Replace, OnSuccess = "CarregaDados()", UpdateTargetId = "DialogModalBody"
+    }, new {@id = "FormAjax"}))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+
+        <div class="modal-body">
+            <div class="form-horizontal">
+                <p class="text-warning">Os campos em * são obrigatórios</p>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.LabelFor(model => model.Url, htmlAttributes: new {@class = "control-label"})
+                        @Html.EditorFor(model => model.Url, new {htmlAttributes = new {@class = "form-control", @autofocus = "autofocus"}})
+                        @Html.ValidationMessageFor(model => model.Url, "", new {@class = "text-danger"})
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.LabelFor(model => model.DescricaoLink, htmlAttributes: new {@class = "control-label"})
+                        @Html.EditorFor(model => model.DescricaoLink, new {htmlAttributes = new {@class = "form-control"}})
+                        @Html.ValidationMessageFor(model => model.DescricaoLink, "", new {@class = "text-danger"})
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.LabelFor(model => model.ComentarioLink, htmlAttributes: new {@class = "control-label"})
+                        @Html.EditorFor(model => model.ComentarioLink, new {htmlAttributes = new {@class = "form-control"}})
+                        @Html.ValidationMessageFor(model => model.ComentarioLink, "", new {@class = "text-danger"})
+                    </div>
+                </div>
+
+                <label id="lblMensage" class="control-label text-success">@ViewBag.Mensage</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="col-md-12">
+                <button id="btnCancelar" type="button" class="btn btn-lg btn-primary" data-dismiss="modal">Cancelar</button>
+                <input id="bntSalvar" type="submit" value="Salvar" class="btn btn-lg btn-primary"/>
+            </div>
+        </div>
+    }
+</div>
+@Scripts.Render("~/bundles/jqueryval")

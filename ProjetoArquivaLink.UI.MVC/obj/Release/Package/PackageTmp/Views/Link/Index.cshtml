@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<br />
+<div class="row">
+    <div class="form-horizontal">
+        <div class="col-sm-2">
+            <nav class="btn-group-sm">
+                <p>
+                    <a id="hrNovo" href="" data-bind="click: clickModalInsert" class="btn btn-default btn-success" title="Novo Link" data-toggle="modal" data-target="#modalPopUp"><i class="glyphicon glyphicon-plus"></i> Novo Link</a>
+                </p>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<article>
+    <div class="row">
+        <div class="form-inline">
+            @using (Html.BeginForm())
+            {
+                <div class="input-group col-lg-6">
+                    @Html.TextBox("Filtro", "", new { @id = "txtConsulta", @type = "search", @placeholder = "Buscar", @spellcheck = "true", @autocomplete = "on", @autofocus = "autofocus", @tabindex = "1", @maxlength = "255", @class = "form-control input-lg" })
+                    <span class="input-group-btn">
+                        <button data-bind="click:function() { $root.ClickFiltro() }" id="btnConsultaTipo" title="Filtrar" class="btn btn-info btn-lg" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            }
+        </div>
+    </div>
+
+
+    <br />
+    <table class="table table-hover table-responsive table-bordered">
+        <thead>
+        <tr>
+            <th>Link</th>
+            <th>Descrição</th>
+            <th>Comentários</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+
+        <tbody class="render-html" data-bind="foreach: Links">
+        <tr>
+            <td>
+                <a class="text-riticencia" data-bind="text: Url, attr: { href: Url }" target="_blank"></a>
+            </td>
+            <td data-bind="text: DescricaoLink"></td>
+            <td data-bind="text: ComentarioLink"></td>
+            <td class="text-center td-action-width">
+                <nav>
+                    <a href="#" title="Editar" data-bind="click:function() { $root.ClickEditarLink(IdLink) }" data-toggle="modal" data-target="#modalPopUp" class="btn btn-primary"><i class="glyphicon glyphicon-edit"></i></a>
+                    <a id="hrDetalhes" title="Detalhes" data-bind="attr: { href: IdLink }" data-toggle="modal" data-target="#modalPopUp" class="btn btn-primary"><i class="glyphicon glyphicon-list"></i></a>
+                    <a href="#" title="Excluir" data-bind="click:function() { $root.ExcluirLink(IdLink) }" data-toggle="modal" data-target="#modalPopUp" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
+                </nav>
+            </td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    <nav id="PaginationLink" class="text-center">
+                        <ul id="pagination"></ul>
+                    </nav>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</article>
+
+
+<div class="modal fade" id="modalPopUp" tabindex="-1" role="dialog" aria-hidden="true">
+    <nav id="DialogModalBody" class="modal-dialog modal-width">
+
+    </nav>
+</div>

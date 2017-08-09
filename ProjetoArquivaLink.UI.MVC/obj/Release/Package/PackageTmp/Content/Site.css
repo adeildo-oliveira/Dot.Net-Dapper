@@ -1,0 +1,74 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 1% 0 2%;
+}
+
+.td-action-width {
+    width: 8.7%;
+}
+
+.text-riticencia {
+    overflow: hidden;
+}
+
+.col-div-padding {
+    padding: 0px 0px 12px;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+textarea {
+    resize: none;
+}
+
+.list-group-item-height {
+    height: 95px;
+}
+
+/* MODAL PROGRESS */
+.modal-progress {
+    background-color: #FFF;
+    border: 1px solid #000;
+    height: auto;
+    padding: 10px;
+    width: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -200px;
+    z-index: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+}
+
+.overlay {
+    display: none;
+}

@@ -1,0 +1,9 @@
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Release\ProjetoArquivoLinks.Domain.dll.config
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Release\ProjetoArquivoLinks.Domain.dll
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Release\ProjetoArquivoLinks.Domain.pdb
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Release\EntityFramework.dll
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Release\EntityFramework.SqlServer.dll
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Release\EntityFramework.xml
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Release\EntityFramework.SqlServer.xml
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\obj\Release\ProjetoArquivoLinks.Domain.dll
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\obj\Release\ProjetoArquivoLinks.Domain.pdb

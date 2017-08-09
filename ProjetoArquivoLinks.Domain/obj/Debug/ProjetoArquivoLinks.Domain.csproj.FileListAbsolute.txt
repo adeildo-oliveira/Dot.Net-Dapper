@@ -1,0 +1,10 @@
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Debug\ProjetoArquivoLinks.Domain.dll.config
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Debug\ProjetoArquivoLinks.Domain.dll
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Debug\ProjetoArquivoLinks.Domain.pdb
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Debug\EntityFramework.dll
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Debug\EntityFramework.xml
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\obj\Debug\ProjetoArquivoLinks.Domain.dll
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\obj\Debug\ProjetoArquivoLinks.Domain.pdb
+D:\projetos\web_system\ProjetoArquivaLinks\ProjetoArquivoLinks.Domain\obj\Debug\ProjetoArquivoLinks.Domain.csprojResolveAssemblyReference.cache

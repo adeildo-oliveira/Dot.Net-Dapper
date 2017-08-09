@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{7778BEA0-F664-4955-A82C-F0A9DE5DB3C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{FB755C96-E667-4851-81B9-25FD951EE024}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Aplication", "2 - Aplication", "{AD7BE965-B8E1-4509-8D22-A26901958687}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{C59E5A21-FD3A-413D-A2E2-8259D2D7A9E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{FEE6EBED-78B0-4BD5-B117-E9EEF5D0DA9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{D9972805-CA9C-4DD2-A4B3-2484F47F617B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{15F4F0A8-B37A-4204-AE5F-E4352C35F9E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoArquivaLinks.Infra.CrossCutting.IoC", "ProjetoArquivaLinks.Infra.CrossCutting.IoC\ProjetoArquivaLinks.Infra.CrossCutting.IoC.csproj", "{4173F08B-D963-47F7-A34C-49403711C776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoArquivoLinks.Infra.Data", "ProjetoArquivoLinks.Infra.Data\ProjetoArquivoLinks.Infra.Data.csproj", "{6AC7AF8A-73D9-4E82-900D-28CF0FCBC705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoArquivoLinks.Domain", "ProjetoArquivoLinks.Domain\ProjetoArquivoLinks.Domain.csproj", "{ABC35CE9-70E1-48DE-B8A3-B7137657B6F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoArquivoLinks.Aplication", "ProjetoArquivoLinks.Aplication\ProjetoArquivoLinks.Aplication.csproj", "{22095A31-AAB8-43B6-B085-D8D459B0C76B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoArquivaLink.UI.MVC", "ProjetoArquivaLink.UI.MVC\ProjetoArquivaLink.UI.MVC.csproj", "{A8626199-EB70-4E92-9299-A93589D4AA98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4173F08B-D963-47F7-A34C-49403711C776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4173F08B-D963-47F7-A34C-49403711C776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4173F08B-D963-47F7-A34C-49403711C776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4173F08B-D963-47F7-A34C-49403711C776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC7AF8A-73D9-4E82-900D-28CF0FCBC705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC7AF8A-73D9-4E82-900D-28CF0FCBC705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC7AF8A-73D9-4E82-900D-28CF0FCBC705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC7AF8A-73D9-4E82-900D-28CF0FCBC705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABC35CE9-70E1-48DE-B8A3-B7137657B6F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC35CE9-70E1-48DE-B8A3-B7137657B6F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC35CE9-70E1-48DE-B8A3-B7137657B6F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC35CE9-70E1-48DE-B8A3-B7137657B6F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22095A31-AAB8-43B6-B085-D8D459B0C76B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22095A31-AAB8-43B6-B085-D8D459B0C76B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22095A31-AAB8-43B6-B085-D8D459B0C76B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22095A31-AAB8-43B6-B085-D8D459B0C76B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8626199-EB70-4E92-9299-A93589D4AA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8626199-EB70-4E92-9299-A93589D4AA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8626199-EB70-4E92-9299-A93589D4AA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8626199-EB70-4E92-9299-A93589D4AA98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9972805-CA9C-4DD2-A4B3-2484F47F617B} = {FEE6EBED-78B0-4BD5-B117-E9EEF5D0DA9C}
+		{15F4F0A8-B37A-4204-AE5F-E4352C35F9E9} = {FEE6EBED-78B0-4BD5-B117-E9EEF5D0DA9C}
+		{4173F08B-D963-47F7-A34C-49403711C776} = {15F4F0A8-B37A-4204-AE5F-E4352C35F9E9}
+		{6AC7AF8A-73D9-4E82-900D-28CF0FCBC705} = {D9972805-CA9C-4DD2-A4B3-2484F47F617B}
+		{ABC35CE9-70E1-48DE-B8A3-B7137657B6F9} = {C59E5A21-FD3A-413D-A2E2-8259D2D7A9E0}
+		{22095A31-AAB8-43B6-B085-D8D459B0C76B} = {AD7BE965-B8E1-4509-8D22-A26901958687}
+		{A8626199-EB70-4E92-9299-A93589D4AA98} = {7778BEA0-F664-4955-A82C-F0A9DE5DB3C2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

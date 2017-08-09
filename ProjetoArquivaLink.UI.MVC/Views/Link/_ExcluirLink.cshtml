@@ -1,0 +1,59 @@
+﻿@model ProjetoArquivoLinks.Aplication.ViewModels.LinkViewModel
+
+<div class="modal-content">
+    <header class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Deletar Link</h4>
+    </header>
+
+    @using (Ajax.BeginForm("ExcluirLink", "Link", new AjaxOptions
+    {
+        HttpMethod = "Post",
+        InsertionMode = InsertionMode.Replace,
+        OnSuccess = "onSuccess",
+        UpdateTargetId = "DialogModalBody"
+    }, new { @id = "FormAjax" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.IdLink)
+        <div class="modal-body">
+            <div class="form-horizontal">
+                <dl class="dl-horizontal dl-horizontal-override">
+                    <dt>
+                        <label>URL:</label>
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Url)
+                    </dd>
+
+                    <dt>
+                        <label>Descrição:</label>
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.DescricaoLink)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ComentarioLink)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.ComentarioLink)
+                    </dd>
+
+                </dl>
+
+                <label id="lblMensage" class="control-label text-success">@ViewBag.Mensage</label>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <div class="col-md-12">
+                <button id="btnCancelar" type="button" class="btn btn-lg btn-primary" data-dismiss="modal">Cancelar</button>
+                <input id="bntSalvar" type="submit" value="Excluir" class="btn btn-lg btn-primary" />
+            </div>
+        </div>
+    }
+</div>
